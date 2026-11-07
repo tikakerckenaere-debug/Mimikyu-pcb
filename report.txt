@@ -1,0 +1,12 @@
+Info: Processing symbol 'BT1:Battery:BatteryHolder_Keystone_3034_1x20mm'.
+Info: Processing symbol 'D1:LED_THT:LED_D5.0mm'.
+Info: Processing symbol 'D2:LED_THT:LED_D5.0mm'.
+Info: Processing symbol 'R1:Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal'.
+Info: Processing symbol 'R2:Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal'.
+Changed BT1 footprint from 'Battery:BatteryHolder_Keystone_106_1x20mm' to 'Battery:BatteryHolder_Keystone_3034_1x20mm'.
+Updated BT1 fields.
+Connected BT1 pin 1 to Net-(BT1-+).
+Updated BT1 unit metadata.
+
+
+Info: Total warnings: 0, errors: 0.
