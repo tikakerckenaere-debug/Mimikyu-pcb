@@ -1,4 +1,4 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
-BT1,BatteryHolder_Keystone_3034_1x20mm,1,Battery,
-"D1, D2",LED_D5.0mm,2,LED,
-"R1, R2",R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,2,220,
+﻿Designator,Footprint,Quantity,Value,LCSC Part #,Purchase Link
+BT1,BatteryHolder_Keystone_3034_1x20mm,1,CR2032 Battery Holder,C5199422,https://www.lcsc.com/search?q=C5199422
+"D1, D2",LED_D5.0mm,2,5mm Yellow LED (591nm),C330770,https://www.lcsc.com/search?q=C330770
+"R1, R2",R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,2,220Ω 1% 0.25W Resistor,C3537012,https://www.lcsc.com/search?q=C3537012
