@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mimikyu PCB — Bill of Materials</title>
+<style>
+:root { color-scheme: light; --ink:#242424; --muted:#666; --line:#dedede; --paper:#fff; --accent:#e3c64b; }
+* { box-sizing:border-box; }
+body { margin:0; padding:28px 16px; background:#f4f4f1; color:var(--ink); font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; }
+main { max-width:980px; margin:auto; background:var(--paper); padding:28px; border:1px solid var(--line); border-radius:14px; }
+h1 { margin:0 0 4px; font-size:28px; }
+.sub { color:var(--muted); margin:0 0 24px; }
+table { width:100%; border-collapse:collapse; margin:18px 0; }
+th,td { padding:12px 10px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
+th { background:#f7f7f4; font-size:13px; color:#555; }
+.num { text-align:right; white-space:nowrap; }
+a { color:#1759a6; }
+.total { margin-left:auto; max-width:360px; border-top:2px solid var(--ink); padding-top:12px; }
+.total div { display:flex; justify-content:space-between; padding:4px 0; }
+.grand { font-size:22px; font-weight:700; margin-top:6px; }
+.note { background:#fff8d9; border:1px solid #e7d98e; border-radius:9px; padding:14px 16px; margin-top:22px; }
+.small { color:var(--muted); font-size:13px; }
+@media(max-width:650px) {
+ main { padding:18px 12px; }
+ table { font-size:13px; }
+ th,td { padding:9px 6px; }
+}
+@media print {
+ body { background:white; padding:0; }
+ main { border:0; border-radius:0; }
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Mimikyu PCB — Bill of Materials</h1>
+  <p class="sub">Current working BOM · Prices in EUR · Shipping excluded</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Reference</th><th>Component</th><th>Specification / part</th>
+        <th class="num">Qty</th><th class="num">Unit price</th><th class="num">Line total</th><th>Supplier / link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BT1</td><td>Coin-cell battery holder</td>
+        <td>Velleman BH-001, for CR2032, solder terminals</td>
+        <td class="num">1</td><td class="num">€1.95</td><td class="num">€1.95</td>
+        <td><a href="https://www.cotubex.be/en/porte-piles-et-contacts/2959-battery-holder-for-lithium-cell-o-19mm-cr2032-5410329223960.html" target="_blank" rel="noopener">Cotubex product page</a></td>
+      </tr>
+      <tr>
+        <td>D1–D2</td><td>Yellow LED</td><td>5 mm through-hole LED</td>
+        <td class="num">2</td><td class="num">€0.25</td><td class="num">€0.50</td>
+        <td>Gotron Gent · in-store pickup</td>
+      </tr>
+      <tr>
+        <td>R1–R2</td><td>Resistor</td><td>220 Ω, ¼ W, through-hole</td>
+        <td class="num">2</td><td class="num">€0.10</td><td class="num">€0.20</td>
+        <td>Gotron Gent · in-store pickup</td>
+      </tr>
+      <tr>
+        <td>BAT1</td><td>Coin-cell battery</td><td>CR2032, 3 V</td>
+        <td class="num">1</td><td class="num">€2.10</td><td class="num">€2.10</td>
+        <td>Gotron Gent · in-store pickup</td>
+      </tr>
+      <tr>
+        <td>PCB</td><td>Printed circuit board</td>
+        <td>1 board · yellow · 2-layer FR-4 · 1.6 mm · 1 oz · black silkscreen · lead-free HASL</td>
+        <td class="num">1</td><td class="num">€18.68</td><td class="num">€18.68</td>
+        <td><a href="https://cart.jlcpcb.com/shopcart/cart" target="_blank" rel="noopener">JLCPCB cart</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section class="total">
+    <div><span>Components (excluding PCB)</span><strong>€4.75</strong></div>
+    <div><span>PCB</span><strong>€18.68</strong></div>
+    <div class="grand"><span>Total</span><span>€23.43</span></div>
+    <p class="small">Shipping, any payment fees and any later price changes are not included.</p>
+  </section>
+
+  <section class="note">
+    <strong>PCB compatibility — check before ordering</strong>
+    <p>The selected Cotubex Velleman BH-001 holder has solder terminals. The existing design was based on a Keystone 3034 holder footprint. These are not assumed to be footprint-compatible. Update/check the holder footprint and its pad positions in KiCad, then verify the 3D/2D placement and PCB connections before sending the board to manufacture.</p>
+  </section>
+
+  <p class="small">Price notes: LED, resistor and CR2032 prices are the previously selected Gotron Gent pickup prices. The PCB price is the previously supplied JLCPCB cart amount. Cotubex currently lists the linked BH-001 holder at €1.95. All values are item prices, not delivered totals.</p>
+</main>
+</body>
+</html>
